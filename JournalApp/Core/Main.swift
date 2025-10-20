@@ -7,10 +7,21 @@ import SwiftUI
 
 @main
 struct Main: App {
-    var body: some Scene {
-        WindowGroup {
-            // أول واجهة تنعرض هنا 
-            SplashView()
-        }
-    }
+    @State private var showSplash = true   // نعرض السبلاتش أول
+
+      var body: some Scene {
+          WindowGroup {
+              if showSplash {
+                  SplashView()
+                      .onAppear {
+                          // بعد 2 ثانية انتقل للواجهة التالية
+                          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                              withAnimation { showSplash = false }
+                          }
+                      }
+              } else {
+                  HomeView() // ← الواجهة الثانية (ثابتة حالياً)
+              }
+          }
+      }
 }
