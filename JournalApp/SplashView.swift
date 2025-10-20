@@ -1,4 +1,4 @@
-
+//  All The Ui Will Be In This File
 //  View.swift
 //  JournalApp
 //  Created by Raghad Hamdan Alsuhaim on 27/04/1447 AH.
@@ -6,16 +6,13 @@
 import SwiftUI
 
 struct SplashView: View {
+    
     var body: some View {
         ZStack {
-            LinearGradient(
-                gradient: Gradient(colors: [
-                    Color(hex: "141420"), Color(hex: "000000")  
-                ]
-                                  ),
+         LinearGradient( gradient: Gradient(colors: [Color(hex: "141420"), Color(hex: "000000")]),
                 startPoint: .top,
-                endPoint: .bottom
-            )
+                endPoint: .bottom )
+    
             .ignoresSafeArea()
 
             VStack(spacing: 16) {

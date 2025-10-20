@@ -1,4 +1,4 @@
-//  
+
 //  ViewModle.swift
 //  JournalApp
 //  Created by Raghad Hamdan Alsuhaim on 27/04/1447 AH.
@@ -6,6 +6,8 @@
 import SwiftUI
 
 extension Color {
+    
+    // لون الخلفيه
     init(hex: String) {
         let scanner = Scanner(string: hex)
         _ = scanner.scanString("#") // تجاهل علامة #
@@ -17,4 +19,3 @@ extension Color {
         self.init(red: r, green: g, blue: b)
     }
 }
-

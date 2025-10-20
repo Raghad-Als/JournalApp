@@ -1,7 +1,5 @@
-// All The Ui Will Be In This File
 //  JournalAppApp.swift
 //  JournalApp
-//
 //  Created by Raghad Hamdan Alsuhaim on 27/04/1447 AH.
 
 
