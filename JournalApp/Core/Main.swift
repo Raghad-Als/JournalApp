@@ -6,6 +6,7 @@
 import SwiftUI
 
 @main
+
 struct Main: App {
     @State private var showSplash = true   // نعرض السبلاتش أول
 
@@ -25,3 +26,4 @@ struct Main: App {
           }
       }
 }
+
