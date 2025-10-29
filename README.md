@@ -23,4 +23,3 @@ The goal of JournalApp is to provide a safe and organized space for users to wri
 - Local data persistence
 - Xcode
 
-## How to Run
